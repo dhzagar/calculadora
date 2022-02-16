@@ -1,0 +1,57 @@
+#container {
+    max-width: 243px;
+    border-width: 1.5px;
+    border-style: solid;
+}
+
+#display {
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+    align-items: flex-end;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 70px;
+    line-height: 18px;
+    font-size: 20px;
+}
+#first-number{
+    font-size: 14px;
+}
+#second-number{
+    font-size: 20px;
+}
+#container > #btns{ 
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 60px);
+}
+.num-buttons{
+    width: auto;
+    height: 40px;
+}
+#equal {
+    background-color:darkslategray;
+    color: white;
+    grid-column: 4;
+    grid-row: 4/6;
+    height:80px;
+}
+#equal:hover{
+    background-color: grey;
+    color:black;
+}
+#sum{
+    grid-column: 4;
+    grid-row: 2/4;
+    height:80px;
+}
+#btn0{
+    width: 120px;
+    grid-column: 1/3;
+}
+.operator{
+    height: 40px;
+}
